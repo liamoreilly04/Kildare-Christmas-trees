@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Trees - Kildare Christmas Tree Farm</title>
+    <style>
+
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+         header {
+            background-color: #004d00;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+     navbar a:hover {
+            background-color: #ddd;
+            color: black;
+            border-radius: 5px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #006400;
+            border-radius: 5px;
+        }
+        
+
+        }
+
+        .tree-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .tree-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tree-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+        .tree-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .tree-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .tree-card h2 {
+            font-size: 1.5rem;
+            color: #004d00;
+            padding: 15px 10px;
+        }
+
+        .tree-card p {
+            font-size: 1rem;
+            color: #555;
+            padding: 0 10px;
+        }
+
+        .tree-card button {
+            display: block;
+            background-color: #004d00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 15px auto 20px auto;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .tree-card button:hover {
+            background-color: #006400;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Christmas Trees</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="trees.html">Trees</a>
+</nav>
+
+<section class="tree-section">
+    <h2>Explore Our Selection</h2>
+    <p>Discover our premium range of Christmas trees. Click "Add to Cart" to reserve your tree for the holidays!</p>
+
+    <div class="tree-grid">
+        <!-- Tree 1: Nordmann Fir -->
+        <div class="tree-card">
+            <img src="nordman.jpeg" alt="Nordmann Fir">
+            <h2>Nordmann Fir</h2>
+            <p>Known for its soft, glossy needles and excellent shape, this tree is a favorite for families.</p>
+            <button onclick="addToCart('Nordmann Fir')">Add to Cart</button>
+        </div>
+
+        <!-- Tree 2: Noble Fir -->
+        <div class="tree-card">
+            <img src="noblefir.jpeg" alt="Noble Fir">
+            <h2>Noble Fir</h2>
+            <p>This classic tree features sturdy branches and a rich, festive scent, perfect for ornaments.</p>
+            <button onclick="addToCart('Noble Fir')">Add to Cart</button>
+        </div>
+
+        <!-- Tree 3: Fraser Fir -->
+        <div class="tree-card">
+            <img src="fraser.jpeg" alt="Fraser Fir">
+            <h2>Fraser Fir</h2>
+            <p>Strong branches, fresh pine scent, and a perfect triangular shape make this tree a holiday classic.</p>
+            <button onclick="addToCart('Fraser Fir')">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy;  Kildare Christmas Tree Farm.</p>
+</footer>
+
+<script>
+    // JavaScript function to handle adding trees to the cart
+    function addToCart(treeName) {
+        alert(treeName + " has been added to your cart!");
+    }
+</script>
+
+</body>
+</html>

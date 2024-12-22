@@ -1,0 +1,98 @@
+<style> 
+/* General styling for the trees section */
+.trees-section {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.trees-section h1 {
+    font-size: 2.5rem;
+    color: #004d00;
+    margin-bottom: 20px;
+}
+
+.trees-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Tree grid container */
+.tree-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+}
+
+/* Individual tree card */
+.tree-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tree-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Tree image */
+.tree-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Tree details */
+.tree-card h2 {
+    font-size: 1.5rem;
+    color: #004d00;
+    padding: 15px 10px;
+}
+
+.tree-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 10px 20px;
+}
+
+/* Button styling */
+.tree-card button {
+    background-color: #004d00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.tree-card button:hover {
+    background-color: #006400;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .trees-section h1 {
+        font-size: 2rem;
+    }
+
+    .trees-section p {
+        font-size: 1rem;
+    }
+
+    .tree-card img {
+        height: 180px;
+    }
+}
+<style/>
